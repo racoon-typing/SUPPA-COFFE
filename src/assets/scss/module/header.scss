@@ -2,11 +2,52 @@
     width: 100%;
 
     &__wrapper {
-        width: 100%;
-        max-width: 500px;
-        margin: 0 auto;
+        &-content {
+            width: 100%;
+            max-width: $mobile-width;
+            margin: 0 auto;
+            background-color: $color-main;
+            padding: 22px 20px;
+            box-sizing: border-box;
+        }
+    }
+
+    &__burger {
         position: relative;
-        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 28px;
+        height: 19px;
+        margin-left: auto;
+
+        &-line {
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-color: $color-second;
+            left: 0;
+
+            &:nth-child(1) {
+                top: 0;
+            }
+
+            &:nth-child(2),
+            &:nth-child(3) {
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            &:nth-child(4) {
+                bottom: 0;
+            }
+        }
+    }
+
+
+    &__menu {
+        display: none;
     }
 
 }
