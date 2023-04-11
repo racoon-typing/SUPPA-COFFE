@@ -1,8 +1,10 @@
 .first-screen {
     width: 100%;
+    margin-bottom: 60px;
 
     &__content {
         width: 100%;
+        max-width: $mobile-width;
         box-sizing: border-box;
         padding: 0 45px;
         padding-top: 110px;
