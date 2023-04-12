@@ -2,6 +2,11 @@
     width: 100%;
     margin-bottom: 60px;
 
+    &__wrapper {
+        max-width: $mobile-width;
+        margin: 0 auto;
+    }
+
     &__content {
         width: 100%;
         max-width: $mobile-width;
