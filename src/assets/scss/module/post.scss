@@ -1,0 +1,49 @@
+.post {
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: $mobile-width;
+        margin: 0 auto;
+        padding: 0 20px;
+        min-height: 550px;
+        background-image: url('');
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &__title {
+        margin: 0;
+        font-size: 30px;
+        line-height: 1.23;
+        color: $color-second;
+        margin-bottom: 18px;
+    }
+
+    &__text {
+        margin: 0;
+        font-size: 16px;
+        line-height: 1.45;
+        color: $color-second;
+        margin-bottom: 20px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+
+    &__item {
+        margin: 12px 18px;
+
+        &-img {
+            display: block;
+            width: 138px;
+            height: auto;
+        }
+    }
+}

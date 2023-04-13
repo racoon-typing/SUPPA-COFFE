@@ -90,7 +90,8 @@
         text-decoration: none;
 
         & span {
-            width: auto;
+            display: block;
+            width: max-content;
             color: $color-main;
             border: 2px solid $color-fourth;
             border-radius: 30px;

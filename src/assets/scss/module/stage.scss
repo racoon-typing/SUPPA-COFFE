@@ -1,0 +1,72 @@
+.stage {
+    &__wrapper {
+        max-width: $mobile-width;
+        margin: 0 auto;
+        padding: 90px 20px;
+    }
+
+    &__title {
+        margin: 0;
+        font-size: 30px;
+        line-height: 1.23;
+        margin-bottom: 40px;
+    }
+
+    &__list {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+
+    &__item {
+        position: relative;
+        padding-left: 75px;
+        padding-bottom: 80px;
+
+        &:last-child {
+            &::before {
+                display: none;
+            }
+        }
+
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 24px;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 100%;
+            background-color: $color-fifth;
+        }
+
+        &-count {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            top: 0;
+            left: 0;
+            border-radius: 50%;
+            font-size: 16px;
+            color: $color-second;
+            background-color: $color-main;
+        }
+
+        &-title {
+            margin: 0;
+            font-size: 18px;
+            line-height: 1.35;
+            margin-bottom: 4px;
+        }
+
+        &-text {
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.45;
+        }
+
+    }
+}
