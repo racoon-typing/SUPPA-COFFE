@@ -1,6 +1,8 @@
 .offer {
     &__wrapper {
         padding: 90px 0 105px;
+        max-width: $mobile-width;
+        margin: 0 auto;
     }
 
     &__title {
@@ -39,6 +41,7 @@
         display: flex;
         overflow-x: auto;
         overflow-y: hidden;
+        padding-bottom: 15px;
     }
 
     &__item {

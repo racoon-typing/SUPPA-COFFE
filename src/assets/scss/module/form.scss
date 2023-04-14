@@ -1,0 +1,32 @@
+.form {
+    padding-bottom: 30px;
+
+    &__input {
+        display: block;
+        width: 100%;
+        min-height: 60px;
+        font-size: 16px;
+        line-height: 1.33;
+        color: #000000;
+        border: none;
+        background-color: transparent;
+        margin-bottom: 25px;
+        border-bottom: 1px solid #b3b3b3;
+
+        &--number {
+            margin-bottom: 0;
+        }
+    }
+
+    &__button {
+        width: 100%;
+        height: 60px;
+        margin-top: 30px;
+        color: #ffffff;
+        background-color: $color-fourth;
+        padding: 0 30px;
+        border-radius: 30px;
+        border: none;
+        font-size: 16px;
+    }
+}
