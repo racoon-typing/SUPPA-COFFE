@@ -2,6 +2,7 @@
     width: 100%;
 
     &__wrapper {
+        box-sizing: border-box;
         background-color: $color-third;
         padding: 105px 20px 90px;
         max-width: $mobile-width;
@@ -51,6 +52,15 @@
             font-size: 16px;
             line-height: 1.45;
             font-weight: 300;
+        }
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .info {
+        &__wrapper {
+            max-width: $tablet-width;
+            padding: 105px 90px 90px;
         }
     }
 }

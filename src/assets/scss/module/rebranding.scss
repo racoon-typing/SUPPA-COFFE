@@ -1,5 +1,6 @@
 .rebranding {
     &__wrapper {
+        box-sizing: border-box;
         max-width: $mobile-width;
         margin: 0 auto;
         padding: 90px 20px 75px;
@@ -55,6 +56,15 @@
             &--second {
                 height: 250px;
             }
+        }
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .rebranding {
+        &__wrapper {
+            max-width: $tablet-width;
+            padding: 90px 90px 75px;
         }
     }
 }

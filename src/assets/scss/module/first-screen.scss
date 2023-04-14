@@ -9,7 +9,6 @@
 
     &__content {
         width: 100%;
-        max-width: $mobile-width;
         box-sizing: border-box;
         padding: 0 45px;
         padding-top: 110px;
@@ -64,5 +63,26 @@
         object-fit: cover;
         background-color: #d9d9d9;
     }
-
 }
+
+
+@media (min-width: $tablet-width) {
+    .first-screen {
+        margin-bottom: 0;
+
+        &__wrapper {
+            max-width: $tablet-width;
+        }
+
+        &__content {
+            width: 500px;
+            padding: 110px 90px 40px;
+        }
+
+        &__option {
+            &-item {
+                margin-right: 30px;
+            }
+        }
+    }
+}   

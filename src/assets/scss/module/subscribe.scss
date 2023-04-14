@@ -40,3 +40,27 @@
         flex-direction: column;
     }
 }
+
+@media (min-width: $tablet-width) {
+    .subscribe {
+        &__wrapper {
+            max-width: $tablet-width;
+        }
+
+        &__title {
+            font-size: 38px;
+            line-height: 1.23;
+            margin-bottom: 20px;
+        }
+
+        &__text {
+            font-size: 18px;
+            line-height: 1.55;
+            margin-bottom: 30px;
+        }
+
+        &__form {
+            align-items: flex-start;
+        }
+    }
+}

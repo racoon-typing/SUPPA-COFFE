@@ -102,3 +102,11 @@
         }
     }
 }
+
+@media (min-width: $tablet-width) {
+    .offer {
+        &__wrapper {
+            max-width: $tablet-width;
+        }
+    }
+}

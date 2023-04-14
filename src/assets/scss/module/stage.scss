@@ -3,6 +3,7 @@
         max-width: $mobile-width;
         margin: 0 auto;
         padding: 90px 20px;
+        box-sizing: border-box;
     }
 
     &__title {
@@ -67,6 +68,14 @@
             font-size: 14px;
             line-height: 1.45;
         }
+    }
+}
 
+@media (min-width: $tablet-width) {
+    .stage {
+        &__wrapper {
+            max-width: $tablet-width;
+            padding: 120px 90px 90px;
+        }
     }
 }

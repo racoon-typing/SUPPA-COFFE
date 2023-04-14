@@ -113,15 +113,15 @@
 }
 
 
-// @media (min-width: $tablet-width) {
-//     .header {
-//         &__wrapper {
-//             width: 100%;
-//             max-width: unset;
-//         }
-//     }
-
-// }   
+@media (min-width: $tablet-width) {
+    .header {
+        &__wrapper {
+            &-content {
+                max-width: $tablet-width;
+            }
+        }
+    }
+}   
 
 // @media (min-width: $desktop-width) {
 //     .header {

@@ -65,3 +65,23 @@
         }
     }
 }
+
+@media (min-width: $tablet-width) {
+    .post {
+        &__wrapper {
+            max-width: $tablet-width;
+        }
+
+        &__title {
+            font-size: 48px;
+            line-height: 1.23;
+            margin-bottom: 40px;
+        }
+
+        &__text {
+            font-size: 18px;
+            line-height: 1.55;
+            margin-bottom: 28px;
+        }
+    }
+}
