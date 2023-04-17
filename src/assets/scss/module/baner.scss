@@ -2,7 +2,6 @@
     &__wrapper {
         display: flex;
         align-items: flex-end;
-        max-width: $mobile-width;
         margin: 0 auto;
         min-height: 591px;
         box-sizing: border-box;
@@ -18,6 +17,7 @@
         font-size: 42px;
         line-height: 50px;
         font-size: 600;
+        box-sizing: border-box;
         padding: 24px 10px 38px;
         color: $color-second;
     }
@@ -26,7 +26,6 @@
 @media (min-width: $tablet-width) {
     .baner {
         &__wrapper {
-            max-width: $tablet-width;
             display: flex;
             justify-content: center;
             padding: 0 90px 80px;
@@ -34,7 +33,7 @@
         }
 
         &__title {
-            font-size: 68px;
+            font-size: 42px;
             line-height: 1.17;
             max-width: 600px;
         }

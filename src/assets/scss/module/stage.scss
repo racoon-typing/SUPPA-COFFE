@@ -11,6 +11,7 @@
         font-size: 30px;
         line-height: 1.23;
         margin-bottom: 40px;
+        text-align: center;
     }
 
     &__list {
@@ -25,6 +26,8 @@
         padding-bottom: 80px;
 
         &:last-child {
+            padding-bottom: 0;
+
             &::before {
                 display: none;
             }
@@ -74,8 +77,19 @@
 @media (min-width: $tablet-width) {
     .stage {
         &__wrapper {
-            max-width: $tablet-width;
-            padding: 120px 90px 90px;
+            max-width: 600px;            
+            padding: 120px 0 90px;
+        }
+
+        &__title {
+            font-size: 38px;
+            margin-bottom: 45px;
+        }
+
+        &__item {
+            &-title {
+                font-size: 20px;
+            }
         }
     }
 }

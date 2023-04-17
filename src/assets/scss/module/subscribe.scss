@@ -1,6 +1,5 @@
 .subscribe {
     &__wrapper {
-        max-width: $mobile-width;
         margin: 0 auto;
         background-color: $color-third;
 
@@ -43,8 +42,8 @@
 
 @media (min-width: $tablet-width) {
     .subscribe {
-        &__wrapper {
-            max-width: $tablet-width;
+        &__img {
+            max-height: 700px;
         }
 
         &__title {

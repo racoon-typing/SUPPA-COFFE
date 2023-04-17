@@ -1,11 +1,11 @@
 .header {
     width: 100%;
+    background-color: $color-main;
 
     &__wrapper {
         width: 100%;
         padding: 22px 20px;
         box-sizing: border-box;
-        background-color: $color-main;
 
         &-content {
             width: 100%;

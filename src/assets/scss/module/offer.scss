@@ -1,7 +1,6 @@
 .offer {
     &__wrapper {
         padding: 90px 0 105px;
-        max-width: $mobile-width;
         margin: 0 auto;
     }
 
@@ -51,6 +50,7 @@
         padding: 0 20px;
 
         &-title {
+            margin: 0;
             font-size: 22px;
             line-height: 1.23;
             margin-bottom: 15px;
@@ -105,8 +105,43 @@
 
 @media (min-width: $tablet-width) {
     .offer {
-        &__wrapper {
-            max-width: $tablet-width;
+        &__title {
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 38px;
+        }
+
+        &__text {
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 22px;
+            line-height: 1.5;
+        }
+
+        &__list {
+            padding-left: 30px;
+        }
+
+        &__item {
+            max-width: 290px;
+            box-sizing: content-box;
+
+            &-title {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+        }
+
+        &__link  {
+            width: 157px;
+            display: flex;
+            justify-content: center;
+            
+            & span {
+                width: max-content;
+                box-sizing: border-box;
+                padding: 11.5px 30px;
+            }
         }
     }
 }

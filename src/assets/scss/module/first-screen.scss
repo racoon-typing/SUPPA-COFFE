@@ -34,14 +34,15 @@
         &-list {
             display: flex;
             flex-wrap: wrap;
+            justify-content: space-between;
             padding: 0;
             margin: 0;
             list-style-type: none;
         }
 
         &-item {
-            margin-right: 20px;
-            margin-bottom: 10px;
+            // margin-right: 20px;
+            // margin-bottom: 10px;
 
             &-name {
                 margin: 0;
@@ -75,13 +76,33 @@
         }
 
         &__content {
-            width: 500px;
+            max-width: 600px;
             padding: 110px 90px 40px;
+        }
+
+        &__title {
+            font-size: 60px;
+            line-height: 66px;
+        }
+
+        &_description {
+            font-size: 16px;
+            line-height: 26px;
         }
 
         &__option {
             &-item {
                 margin-right: 30px;
+
+                &-name {
+                    font-size: 16px;
+                    line-height: 26px;
+                }
+
+                &-number {
+                    font-size: 45px;
+                    line-height: 72px;
+                }
             }
         }
     }

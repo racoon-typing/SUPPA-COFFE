@@ -9,6 +9,7 @@
     }
 
     &__title {
+        margin: 0;
         font-size: 30px;
         line-height: 1.23;
         margin-bottom: 20px;
@@ -77,8 +78,26 @@
 @media (min-width: $tablet-width) {
     .advantages {
         &__wrapper {
-            max-width: $tablet-width;
-            padding: 105px 90px 90px;
+            max-width: 600px;
+            padding: 105px 0 90px;
+        }
+
+        &__title {
+            font-size: 38px;
+        }
+
+        &__text {
+            font-size: 22px;
+        }
+
+        &__item {
+            &-title {
+                font-size: 20px;
+            }
+        }
+
+        &__sub-item {
+            font-size: 16px;
         }
     }
 }
