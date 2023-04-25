@@ -101,3 +101,33 @@
         }
     }
 }
+
+@media (min-width: $desktop-width) {
+    .advantages {
+        &__wrapper {
+            max-width: $desktop-width;
+            padding: 120px;
+            padding-bottom: 160px;
+            box-sizing: border-box;
+        }
+
+        &__title {
+            margin-bottom: 40px;
+        }
+
+        &__text {
+            padding: 0 350px;
+            margin-bottom: 80px;
+        }
+
+        &__list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        &__item {
+            margin-bottom: 0;
+        }
+    }
+}

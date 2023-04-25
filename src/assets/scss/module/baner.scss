@@ -39,3 +39,28 @@
         }
     }
 }
+
+@media (min-width: $desktop-width) {
+    .baner {
+        &__wrapper {
+            min-height: 432px;
+            max-width: $desktop-width;
+            padding: 0 120px;
+            box-sizing: border-box;
+            justify-content: flex-start;
+        }
+
+        &__content {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            min-height: 432px;
+            width: 650px;
+        }
+
+        &__title {
+            max-width: none;
+            padding: 0;
+        }
+    }
+}

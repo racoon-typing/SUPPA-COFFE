@@ -34,7 +34,7 @@
 
     &__item {
         padding: 23px 0 40px;
-        
+
         &:last-child {
             padding-bottom: 0;
         }
@@ -71,5 +71,33 @@
             font-size: 26px;
         }
 
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .info {
+        &__wrapper {
+            max-width: $desktop-width;
+            padding: 90px 120px;
+            box-sizing: border-box;
+        }
+
+        &__icon {
+            margin-bottom: 60px;
+        }
+
+        &__title {
+            padding: 0 100px;
+        }
+
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        &__item {
+            width: 30%;
+        }
     }
 }

@@ -145,3 +145,34 @@
         }
     }
 }
+
+@media (min-width: $desktop-width) {
+    .offer {
+        &__title {
+            margin-bottom: 40px;
+        }
+
+        &__text {
+            max-width: 500px;
+            margin-bottom: 100px;
+        }
+
+        &__svg  {
+            &-wrapper {
+                display: none;
+            }
+        }
+
+        &__list {
+            padding: 0;
+            justify-content: center;
+        }
+
+        &__item {
+            max-width: none;
+            padding: 0 20px;
+            width: 360px;
+            box-sizing: content-box;
+        }
+    }
+}
